@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="8dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shoezzz"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/profile1"/>
+
+            <TextView
+                android:id="@+id/nike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nike"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/namenike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nike Wazowski"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/pricenike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5999"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cartButton"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_baseline_add_shopping_cart_24"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    app:iconTint="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
